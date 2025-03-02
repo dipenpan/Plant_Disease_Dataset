@@ -13,4 +13,4 @@ This project aims to develop a machine learning model for detecting plant leaf d
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/plant-disease-detection.git
+   git clone (https://github.com/dipenpan/Plant_Disease_Dataset)
