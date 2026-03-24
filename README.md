@@ -1,22 +1,24 @@
-# 🌿 Plant Disease Detection
+# 🌿 Plant Disease Recognition System
 
-A deep learning system that detects plant leaf diseases from images using transfer learning, achieving **97% classification accuracy** on the PlantVillage dataset.
+🚀 **Live Demo:** https://plant-disease-detector-dipen.streamlit.app
+
+A deep learning-based web application that detects plant leaf diseases from images in real-time using TensorFlow and Streamlit.
 
 ---
 
 ## 📌 Overview
 
-This project applies transfer learning with **ResNet50** and **VGG16** to classify plant diseases across multiple crop types. The goal is to provide farmers and agricultural researchers with a fast, accurate diagnostic tool that reduces crop loss through early disease identification.
+This project leverages deep learning to classify plant diseases across multiple crop types. It provides a fast, accurate, and user-friendly interface for farmers and researchers to identify diseases early and take corrective action.
 
 ---
 
 ## ✨ Key Features
 
-- **97% Classification Accuracy** — achieved via hyperparameter tuning, image augmentation, and preprocessing pipelines
-- **Transfer Learning** — fine-tuned ResNet50 and VGG16 models pretrained on ImageNet
-- **Data Preprocessing** — processed 1,600+ images with RGB-to-HSV color space transformation, segmentation, and feature scaling
-- **Interactive Web Interface** — real-time image upload with instant disease classification and mitigation recommendations
-- **Multi-class Detection** — identifies diseases across multiple plant species from the PlantVillage dataset
+- **Multi-class Classification** — Supports 38 plant disease categories  
+- **Real-time Prediction** — Upload an image and get instant results  
+- **Deep Learning Model** — Built using TensorFlow/Keras  
+- **Interactive UI** — Clean Streamlit dashboard for easy use  
+- **Deployment Ready** — Fully deployed web application  
 
 ---
 
@@ -26,70 +28,61 @@ This project applies transfer learning with **ResNet50** and **VGG16** to classi
 |---|---|
 | Language | Python |
 | Deep Learning | TensorFlow, Keras |
-| Computer Vision | OpenCV |
-| Models | ResNet50, VGG16 |
-| Data Handling | NumPy, Pandas |
-| Visualization | Matplotlib |
-| Web Interface | Flask |
+| Data Handling | NumPy |
+| Web App | Streamlit |
+| Deployment | Streamlit Cloud |
 
 ---
 
-## 📊 Results
+## 📊 Model Details
 
-| Model | Accuracy |
-|---|---|
-| VGG16 (fine-tuned) | 95% |
-| ResNet50 (fine-tuned) | **97%** |
-| Baseline CNN | ~80% |
+- Trained on PlantVillage dataset  
+- Image size: 128 × 128  
+- Output: 38 disease classes  
+- Uses CNN-based architecture  
 
 ---
 
-## 🚀 Getting Started
+## 🚀 How It Works
 
-### Prerequisites
-```bash
-pip install tensorflow opencv-python flask numpy pandas matplotlib scikit-learn
-```
-
-### Installation
-```bash
-git clone https://github.com/dipenpan/Plant_Disease_Dataset
-cd Plant_Disease_Dataset
-```
-
-### Run the Web App
-```bash
-python app.py
-```
-Then open `http://localhost:5000` in your browser and upload a plant leaf image to get an instant diagnosis.
+1. Upload a plant leaf image  
+2. Model processes and analyzes patterns  
+3. Predicts disease class  
+4. Displays result instantly  
 
 ---
 
 ## 📁 Project Structure
-
-```
 Plant_Disease_Dataset/
-├── models/
-│   ├── resnet50_model.h5
-│   └── vgg16_model.h5
-├── static/
-├── templates/
-├── app.py
-├── train.py
-├── training_hist.json
+├── main.py
+├── trained_model.h5
+├── requirements.txt
+├── home.jpg
+├── Train_plant_disease.ipynb
 └── README.md
-```
 
 ---
 
 ## 🎯 Use Case
 
-Designed for agricultural researchers and farmers who need a lightweight, accessible tool to identify plant diseases early — reducing crop loss and supporting data-driven farming decisions.
+Designed for:
+- Farmers 🌱  
+- Agricultural researchers 🌾  
+- Students working on AI + Computer Vision 🤖  
 
 ---
 
 ## 👤 Author
 
 **Dipendra Pandey**  
-EE + CS Student @ Tennessee State University  
-[LinkedIn](https://www.linkedin.com/in/dipendrapandey6)
+Electrical Engineering + Computer Science  
+Tennessee State University  
+
+🔗 LinkedIn: https://www.linkedin.com/in/dipendrapandey6
+
+## 📸 Demo
+<img width="1455" height="873" alt="Screenshot 2026-03-24 at 1 42 29 PM" src="https://github.com/user-attachments/assets/c5a6ae1d-51f1-4c36-aa05-95235690ea8a" />
+<img width="1463" height="825" alt="Screenshot 2026-03-24 at 1 49 38 PM" src="https://github.com/user-attachments/assets/697807d6-ef69-4033-8540-66073e914846" />
+
+
+
